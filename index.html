@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+      <title>Frontend Mentor | NFT preview card component</title>
+
+      <style>
+
+        *{
+          margin: 0px;
+          padding: 0px;
+        }
+
+        body{
+          background-color: hsl(216, 55%, 11%);
+          font-family: 'Outfit', sans-serif;
+        }
+
+        a:hover{
+          cursor: pointer;
+        }
+
+        #container{
+          background-color: hsl(214, 50%, 16%);
+          width: 270px;
+          height: 490px;
+          border-radius: 15px;
+          padding: 15px;
+          text-align: left;
+          margin: 0 auto;
+          margin-top: 200px;
+          box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+          color: white;
+        }
+
+        #img-principal img{
+          border-radius: 8px;
+          width: 270px;
+          height: 270px;
+          margin-bottom: 20px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+
+        #img-principal:hover{
+          filter: contrast(2);
+          transition: all 3S;
+        }
+
+        #eth{
+          float: left;
+          color: hsl(180, 100%, 51%);
+        }
+
+        #dias-restantes{
+          float: right;
+        }
+
+        #rodape{
+          margin-top: 17px;
+        }
+
+        #rodape p{
+          padding-top: 10px;
+          text-indent: 10px;
+        }
+
+        #rodape img{
+          width: 35px;
+          height: 35px;
+          float: left;
+        }
+
+        .color-gray{
+          color: hsl(214, 21%, 50%);
+        }
+
+      </style>
+      
+    </head>
+
+    <body>
+
+      <div id="container">
+
+        <div id="img-principal">
+
+          <a href="https://www.uol.com.br/" target="_blank"><img src="img/image-equilibrium.jpg"></a>
+
+        </div>
+
+        <h3><a>Equilibrium #3429</a></h3>
+
+        <br>
+
+        <p class="color-gray">Our Equilibrium collection promotes balance and calm.</p>
+
+        <br>
+    
+        <p id="eth"><a>0.041 ETH</a></p>
+        
+        <p id="dias-restantes" class="color-gray">3 days left</p>
+        
+        <br><br>
+
+        <hr class="color-gray">
+
+        <div id="rodape">
+
+          <img src="img/image-avatar.png" alt="avatar">
+
+          <p>Creation of Guilherme Campos</p>
+
+        </div>
+
+      </div>
+
+    </body>
+
+</html>
